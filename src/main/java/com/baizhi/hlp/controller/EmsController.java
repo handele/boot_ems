@@ -24,6 +24,7 @@ public class EmsController {
     public String queryAll(Model model){
         List<Ems> ems = emsService.queryAll();
         model.addAttribute("ems",ems);
+        System.out.println("你好");
         return "emplist";
     }
 
